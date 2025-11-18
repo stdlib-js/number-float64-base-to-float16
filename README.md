@@ -35,32 +35,38 @@ limitations under the License.
 
 > Convert a [double-precision floating-point number][ieee754] to the nearest [half-precision floating-point number][half-precision-floating-point-format].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float64-base-to-float16
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var float64ToFloat16 = require( '@stdlib/number-float64-base-to-float16' );
+float64ToFloat16 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var float64ToFloat16 = require( 'path/to/vendor/umd/number-float64-base-to-float16/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.float64ToFloat16;
+})();
+</script>
 ```
 
 #### float64ToFloat16( x )
@@ -92,16 +98,26 @@ var y = float64ToFloat16( 1.337 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-array-uniform' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var float64ToFloat16 = require( '@stdlib/number-float64-base-to-float16' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Generate an array of random numbers:
 var x = uniform( 100, 0.0, 100.0 );
 
 // Convert each double-precision floating-point number to the nearest half-precision floating-point number:
 logEachMap( 'float64: %f => float16: %f', x, float64ToFloat16 );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
