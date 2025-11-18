@@ -35,32 +35,14 @@ limitations under the License.
 
 > Convert a [double-precision floating-point number][ieee754] to the nearest [half-precision floating-point number][half-precision-floating-point-format].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float64-base-to-float16
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var float64ToFloat16 = require( '@stdlib/number-float64-base-to-float16' );
+import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@deno/mod.js';
 ```
 
 #### float64ToFloat16( x )
@@ -93,9 +75,9 @@ var y = float64ToFloat16( 1.337 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random-array-uniform' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var float64ToFloat16 = require( '@stdlib/number-float64-base-to-float16' );
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
+import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
+import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@deno/mod.js';
 
 // Generate an array of random numbers:
 var x = uniform( 100, 0.0, 100.0 );
@@ -125,7 +107,7 @@ logEachMap( 'float64: %f => float16: %f', x, float64ToFloat16 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
