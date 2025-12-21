@@ -108,6 +108,94 @@ logEachMap( 'float64: %f => float16: %f', x, float64ToFloat16 );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float64/base/to_float16.h"
+```
+
+#### stdlib_base_float64_to_float16( x )
+
+Converts a [double-precision floating-point number][ieee754] to the nearest [half-precision floating-point number][half-precision-floating-point-format].
+
+```c
+#include "stdlib/number/float16/ctor.h"
+
+stdlib_float16_t x = stdlib_base_float64_to_float16( 3.14 );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+stdlib_float16_t stdlib_base_float64_to_float16( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float64/base/to_float16.h"
+#include "stdlib/number/float16/ctor.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    stdlib_float16_t v;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = stdlib_base_float64_to_float16( x[ i ] );
+        printf( "%lf => uint16: %d\n", x[ i ], stdlib_float16_to_bits( v ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -168,8 +256,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
