@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float64-base-to-float16",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert a double-precision floating-point number to the nearest half-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -49,7 +49,7 @@
     "@stdlib/math-base-special-abs": "^0.2.2",
     "@stdlib/number-float16-ctor": "github:stdlib-js/number-float16-ctor#main",
     "@stdlib/number-float32-base-to-float16": "github:stdlib-js/number-float32-base-to-float16#main",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
