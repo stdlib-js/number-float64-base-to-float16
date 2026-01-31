@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@esm/index.mjs';
+import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@v0.1.1-esm/index.mjs';
 ```
 
 #### float64ToFloat16( x )
@@ -82,7 +82,7 @@ var y = float64ToFloat16( 1.337 );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@esm/index.mjs';
+import float64ToFloat16 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float16@v0.1.1-esm/index.mjs';
 
 // Generate an array of random numbers:
 var x = uniform( 100, 0.0, 100.0 );
