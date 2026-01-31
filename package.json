@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float64-base-to-float16",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert a double-precision floating-point number to the nearest half-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -47,18 +47,18 @@
     "@stdlib/constants-float64-pinf": "^0.2.2",
     "@stdlib/math-base-assert-is-finite": "^0.2.2",
     "@stdlib/math-base-special-abs": "^0.2.2",
-    "@stdlib/number-float16-ctor": "github:stdlib-js/number-float16-ctor#main",
-    "@stdlib/number-float32-base-to-float16": "github:stdlib-js/number-float32-base-to-float16#main",
+    "@stdlib/number-float16-ctor": "^0.1.1",
+    "@stdlib/number-float32-base-to-float16": "^0.1.0",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/console-log-each-map": "^0.1.0",
     "@stdlib/constants-float16-ninf": "^0.2.2",
     "@stdlib/constants-float16-pinf": "^0.2.2",
     "@stdlib/constants-float64-ninf": "^0.2.2",
     "@stdlib/math-base-assert-is-nan": "^0.2.2",
     "@stdlib/math-base-assert-is-negative-zero": "^0.2.2",
-    "@stdlib/number-float16-base-from-word": "github:stdlib-js/number-float16-base-from-word#main",
+    "@stdlib/number-float16-base-from-word": "^0.2.0",
     "@stdlib/random-array-uniform": "^0.2.1",
     "@stdlib/utils-try-require": "^0.2.2",
     "proxyquire": "^2.0.0",
